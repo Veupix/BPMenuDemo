@@ -1,0 +1,55 @@
+Generating report for minidump
+
+Application version 4.25.3.0
+ ... built from changelist 0
+
+OS version Linux 5.4.0-54-generic (network name: eugene-HP-ProBook-450-G5)
+Running 4 x86_64 processors (8 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x0000000000000038"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUE4Editor-UMGEditor.so!HasLatentActions(UEdGraph*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprint.cpp:969]
+libUE4Editor-UMGEditor.so!HasLatentActions(UEdGraph*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprint.cpp:986]
+libUE4Editor-UMGEditor.so!UWidgetBlueprint::UpdateTickabilityStats(bool&, bool&, bool&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprint.cpp:1036]
+libUE4Editor-UMGEditor.so!FWidgetBlueprintCompilerContext::CopyTermDefaultsToDefaultObject(UObject*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprintCompiler.cpp:457]
+libUE4Editor-KismetCompiler.so!FKismetCompilerContext::PropagateValuesToCDO(UObject*, UObject*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/KismetCompiler/Private/KismetCompiler.cpp:1257]
+libUE4Editor-Kismet.so!FBlueprintCompilationManagerImpl::ReinstanceBatch(TArray<FReinstancingJob, TSizedDefaultAllocator<32> >&, TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> >&, FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/Kismet/Private/BlueprintCompilationManager.cpp:2015]
+libUE4Editor-Kismet.so!FBlueprintCompilationManagerImpl::FlushCompilationQueueImpl(bool, TArray<UBlueprint*, TSizedDefaultAllocator<32> >*, TArray<UBlueprint*, TSizedDefaultAllocator<32> >*, FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/Kismet/Private/BlueprintCompilationManager.cpp:1362]
+libUE4Editor-Kismet.so!FBlueprintCompilationManager::FlushCompilationQueue(FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/Kismet/Private/BlueprintCompilationManager.cpp:3017]
+libUE4Editor-CoreUObject.so!FScopedClassDependencyGather::~FScopedClassDependencyGather() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/Blueprint/BlueprintSupport.cpp:440]
+libUE4Editor-CoreUObject.so!FLinkerLoad::CreateExport(int) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/LinkerLoad.cpp:4574]
+libUE4Editor-CoreUObject.so!FLinkerLoad::IndexToObject(FPackageIndex) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/LinkerLoad.cpp:4811]
+libUE4Editor-CoreUObject.so!FLinkerLoad::CreateExport(int) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/LinkerLoad.cpp:4185]
+libUE4Editor-CoreUObject.so!FLinkerLoad::LoadAllObjects(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/LinkerLoad.cpp:3397]
+libUE4Editor-CoreUObject.so!LoadPackageInternal(UPackage*, char16_t const*, unsigned int, FLinkerLoad*, FArchive*, FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:1307]
+libUE4Editor-CoreUObject.so!LoadPackage(UPackage*, char16_t const*, unsigned int, FArchive*, FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:1427]
+libUE4Editor-CoreUObject.so!ResolveName(UObject*&, FString&, bool, bool, unsigned int, FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:767]
+libUE4Editor-CoreUObject.so!StaticLoadObjectInternal(UClass*, UObject*, char16_t const*, char16_t const*, unsigned int, UPackageMap*, bool, FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:828]
+libUE4Editor-CoreUObject.so!StaticLoadObject(UClass*, UObject*, char16_t const*, char16_t const*, unsigned int, UPackageMap*, bool, FUObjectSerializeContext*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:904]
+libUE4Editor-ContentBrowser.so!ContentBrowserUtils::LoadAssetsIfNeeded(TArray<FString, TSizedDefaultAllocator<32> > const&, TArray<UObject*, TSizedDefaultAllocator<32> >&, bool, bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:385]
+libUE4Editor-ContentBrowser.so!ContentBrowserUtils::DeleteFolders(TArray<FString, TSizedDefaultAllocator<32> > const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:595]
+libUE4Editor-ContentBrowser.so!FPathContextMenu::ExecuteDeleteFolderConfirmed() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/PathContextMenu.cpp:791]
+libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, FPathContextMenu, (ESPMode)0, FReply ()>::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-ContentBrowser.so!SContentBrowserConfirmPopup::YesClicked() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:258]
+libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, SContentBrowserConfirmPopup, (ESPMode)0, FReply ()>::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-Slate.so!SButton::ExecuteOnClick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:385]
+libUE4Editor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:304]
+libUE4Editor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4676]
+libUE4Editor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5198]
+libUE4Editor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, FVector2D) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5166]
+libUE4Editor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:358]
+libUE4Editor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:428]
+UE4Editor!FEngineLoop::Tick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:4762]
+UE4Editor!GuardedMain(char16_t const*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/Launch.cpp:171]
+libUE4Editor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:264]
+libc.so.6!__libc_start_main(+0xf2)
+UE4Editor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

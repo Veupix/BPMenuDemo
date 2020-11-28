@@ -1,0 +1,58 @@
+Generating report for minidump
+
+Application version 4.25.3.0
+ ... built from changelist 0
+
+OS version Linux 5.4.0-54-generic (network name: eugene-HP-ProBook-450-G5)
+Running 4 x86_64 processors (8 logical cores)
+Exception was "Ensure condition failed: CurObject != nullptr [File:/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp] [Line: 2829]"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUE4Editor-Core.so!FUnixPlatformStackWalk::CaptureStackBackTrace(unsigned long long*, unsigned int, void*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Unix/UnixPlatformStackWalk.cpp:693]
+libUE4Editor-Core.so!FGenericPlatformStackWalk::StackWalkAndDump(char*, unsigned long, int, void*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformStackWalk.cpp:178]
+libUE4Editor-Core.so!FUnixCrashContext::CaptureStackTrace() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Unix/UnixPlatformCrashContext.cpp:305]
+libUE4Editor-Core.so!ReportEnsure(char16_t const*, int) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Unix/UnixPlatformStackWalk.cpp:900]
+libUE4Editor-Core.so!FDebug::EnsureFailed(char const*, char const*, int, char16_t const*, int) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Misc/AssertionMacros.cpp:417]
+libUE4Editor-Core.so!FDebug::OptionallyLogFormattedEnsureMessageReturningFalseImpl(bool, char const*, char const*, int, char16_t const*, ...) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Misc/AssertionMacros.cpp:488]
+libUE4Editor-UnrealEd.so!ObjectTools::ForceDeleteObjects(TArray<UObject*, TSizedDefaultAllocator<32> > const&, bool)::$_71::operator()() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2829]
+libUE4Editor-UnrealEd.so!ObjectTools::ForceDeleteObjects(TArray<UObject*, TSizedDefaultAllocator<32> > const&, bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2829]
+libUE4Editor-UnrealEd.so!FAssetDeleteModel::DoForceDelete() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/AssetDeleteModel.cpp:321]
+libUE4Editor-UnrealEd.so!SDeleteAssetsDialog::ForceDelete() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/Dialogs/SDeleteAssetsDialog.cpp:716]
+libUE4Editor-UnrealEd.so!TBaseSPMethodDelegateInstance<false, SDeleteAssetsDialog, (ESPMode)0, FReply ()>::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-Slate.so!SButton::ExecuteOnClick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:385]
+libUE4Editor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:304]
+libUE4Editor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4676]
+libUE4Editor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5198]
+libUE4Editor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, FVector2D) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5166]
+libUE4Editor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:358]
+libUE4Editor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:428]
+libUE4Editor-Slate.so!FSlateApplication::TickPlatform(float) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1378]
+libUE4Editor-Slate.so!FSlateApplication::AddModalWindow(TSharedRef<SWindow, (ESPMode)0>, TSharedPtr<SWidget const, (ESPMode)0>, bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1905]
+libUE4Editor-UnrealEd.so!UEditorEngine::EditorAddModalWindow(TSharedRef<SWindow, (ESPMode)0>) const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/EditorEngine.cpp:4095]
+libUE4Editor-UnrealEd.so!ObjectTools::DeleteObjects(TArray<UObject*, TSizedDefaultAllocator<32> > const&, bool, ObjectTools::EAllowCancelDuringDelete) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2202]
+libUE4Editor-ContentBrowser.so!ContentBrowserUtils::DeleteFolders(TArray<FString, TSizedDefaultAllocator<32> > const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:602]
+libUE4Editor-ContentBrowser.so!FPathContextMenu::ExecuteDeleteFolderConfirmed() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/PathContextMenu.cpp:791]
+libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, FPathContextMenu, (ESPMode)0, FReply ()>::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-ContentBrowser.so!SContentBrowserConfirmPopup::YesClicked() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:258]
+libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, SContentBrowserConfirmPopup, (ESPMode)0, FReply ()>::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-Slate.so!SButton::ExecuteOnClick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:385]
+libUE4Editor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:304]
+libUE4Editor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4676]
+libUE4Editor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5198]
+libUE4Editor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, FVector2D) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5166]
+libUE4Editor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:358]
+libUE4Editor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:428]
+UE4Editor!FEngineLoop::Tick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:4762]
+UE4Editor!GuardedMain(char16_t const*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/Launch.cpp:171]
+libUE4Editor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:264]
+libc.so.6!__libc_start_main(+0xf2)
+UE4Editor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

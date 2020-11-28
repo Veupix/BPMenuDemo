@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<ExecutionGuid>001BC23D874549CE9752194639387B78</ExecutionGuid>
+		<CrashGUID>UE4CC-Linux-FCDC41DF955144E3B05316C9B5799429_0001</CrashGUID>
+		<IsEnsure>true</IsEnsure>
+		<IsAssert>false</IsAssert>
+		<CrashType>Ensure</CrashType>
+		<ErrorMessage>Ensure condition failed: CurObject != nullptr [File:/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp] [Line: 2829] Stack: 0x00007f3a9565643c libUE4Editor-UnrealEd.so!ObjectTools::ForceDeleteObjects(TArray&lt;UObject*, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;, bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2829] 0x00007f3a94b8e864 libUE4Editor-UnrealEd.so!FAssetDeleteModel::DoForceDelete() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/AssetDeleteModel.cpp:321] 0x00007f3a94ec071f libUE4Editor-UnrealEd.so!SDeleteAssetsDialog::ForceDelete() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/Dialogs/SDeleteAssetsDialog.cpp:716] 0x00007f3a94f8c814 libUE4Editor-UnrealEd.so!TBaseSPMethodDelegateInstance&lt;false, SDeleteAssetsDialog, (ESPMode)0, FReply ()&gt;::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298] 0x00007f3a971ab93c libUE4Editor-Slate.so!SButton::ExecuteOnClick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:385] 0x00007f3a971bff7f libUE4Editor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:304] 0x00007f3a9700c86d libUE4Editor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4676] 0x00007f3a96fd288b libUE4Editor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5198] 0x00007f3a970145b0 libUE4Editor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, FVector2D) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5166] 0x00007f3a97480528 libUE4Editor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:358] 0x00007f3a9747fd31 libUE4Editor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:428] 0x00007f3a96fe766f libUE4Editor-Slate.so!FSlateApplication::TickPlatform(float) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1378] 0x00007f3a96feb083 libUE4Editor-Slate.so!FSlateApplication::AddModalWindow(TSharedRef&lt;SWindow, (ESPMode)0&gt;, TSharedPtr&lt;SWidget const, (ESPMode)0&gt;, bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1905] 0x00007f3a94ffb62c libUE4Editor-UnrealEd.so!UEditorEngine::EditorAddModalWindow(TSharedRef&lt;SWindow, (ESPMode)0&gt;) const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/EditorEngine.cpp:4095] 0x00007f3a95644d98 libUE4Editor-UnrealEd.so!ObjectTools::DeleteObjects(TArray&lt;UObject*, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;, bool, ObjectTools::EAllowCancelDuringDelete) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2202] 0x00007f3a860e9461 libUE4Editor-ContentBrowser.so!ContentBrowserUtils::DeleteFolders(TArray&lt;FString, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:602] 0x00007f3a86212593 libUE4Editor-ContentBrowser.so!FPathContextMenu::ExecuteDeleteFolderConfirmed() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/PathContextMenu.cpp:791] 0x00007f3a862f0b24 libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance&lt;false, FPathContextMenu, (ESPMode)0, FReply ()&gt;::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298] 0x00007f3a861dcb94 libUE4Editor-ContentBrowser.so!SContentBrowserConfirmPopup::YesClicked() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:258] 0x00007f3a861ddca4 libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance&lt;false, SContentBrowserConfirmPopup, (ESPMode)0, FReply ()&gt;::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298] 0x00007f3a971ab93c libUE4Editor-Slate.so!SButton::ExecuteOnClick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:385] 0x00007f3a971bff7f libUE4Editor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:304] 0x00007f3a9700c86d libUE4Editor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4676] 0x00007f3a96fd288b libUE4Editor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5198] 0x00007f3a970145b0 libUE4Editor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, FVector2D) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5166] 0x00007f3a97480528 libUE4Editor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:358] 0x00007f3a9747fd31 libUE4Editor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:428] 0x00000000002318e5 UE4Editor!FEngineLoop::Tick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:4762] 0x000000000023e563 UE4Editor!GuardedMain(char16_t const*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/Launch.cpp:171] 0x00007f3a93a65b5b libUE4Editor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:264] 0x00007f3a9388a0b3 libc.so.6!__libc_start_main(+0xf2) 0x000000000022c029 UE4Editor!_start()</ErrorMessage>
+		<CrashReporterMessage />
+		<ProcessId>10528</ProcessId>
+		<SecondsSinceStart>1242</SecondsSinceStart>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsSourceDistribution>true</IsSourceDistribution>
+		<GameName>UE4-BPMenuDemo</GameName>
+		<ExecutableName>UE4Editor</ExecutableName>
+		<BuildConfiguration>Development</BuildConfiguration>
+		<GameSessionID />
+		<Symbols>**UE4*Release-4.25-CL-0-Linux-Development</Symbols>
+		<PlatformName>Linux</PlatformName>
+		<PlatformNameIni>Linux</PlatformNameIni>
+		<EngineMode>Editor</EngineMode>
+		<EngineModeEx>Dirty</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>4.25.3-0+++UE4+Release-4.25</EngineVersion>
+		<CommandLine>CommandLineRemoved</CommandLine>
+		<LanguageLCID>0</LanguageLCID>
+		<AppDefaultLocale>en_US</AppDefaultLocale>
+		<BuildVersion>++UE4+Release-4.25-CL-0</BuildVersion>
+		<IsUE4Release>false</IsUE4Release>
+		<IsRequestingExit>false</IsRequestingExit>
+		<UserName />
+		<BaseDir>/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Binaries/Linux/</BaseDir>
+		<RootDir>/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/</RootDir>
+		<MachineId>EF3C6615064749C0B1CE90632BC6B53F-000003E8</MachineId>
+		<LoginId>ef3c6615064749c0b1ce90632bc6b53f-000003e8</LoginId>
+		<EpicAccountId />
+		<SourceContext />
+		<UserDescription>Sent in the unattended mode</UserDescription>
+		<UserActivityHint>Layout=&quot;ContentBrowserTab1&quot; Label=&quot;Content Browser&quot; Content=SBo</UserActivityHint>
+		<CrashDumpMode>0</CrashDumpMode>
+		<GameStateName />
+		<Misc.NumberOfCores>4</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>8</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+		<Misc.CPUBrand>Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz</Misc.CPUBrand>
+		<Misc.PrimaryGPUBrand>GenericGPUBrand</Misc.PrimaryGPUBrand>
+		<Misc.OSVersionMajor>GenericOSVersionLabel</Misc.OSVersionMajor>
+		<Misc.OSVersionMinor>GenericOSSubVersionLabel</Misc.OSVersionMinor>
+		<MemoryStats.TotalPhysical>7740907520</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>4998557696</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>8</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>0</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>0</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>0</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>0</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>0</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>0</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<NumMinidumpFramesToIgnore>0</NumMinidumpFramesToIgnore>
+		<CallStack>libUE4Editor-Core.so!FUnixPlatformStackWalk::CaptureStackBackTrace(unsigned long long*, unsigned int, void*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Unix/UnixPlatformStackWalk.cpp:693]
+libUE4Editor-Core.so!FGenericPlatformStackWalk::StackWalkAndDump(char*, unsigned long, int, void*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformStackWalk.cpp:178]
+libUE4Editor-Core.so!FUnixCrashContext::CaptureStackTrace() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Unix/UnixPlatformCrashContext.cpp:305]
+libUE4Editor-Core.so!ReportEnsure(char16_t const*, int) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Unix/UnixPlatformStackWalk.cpp:900]
+libUE4Editor-Core.so!FDebug::EnsureFailed(char const*, char const*, int, char16_t const*, int) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Misc/AssertionMacros.cpp:417]
+libUE4Editor-Core.so!FDebug::OptionallyLogFormattedEnsureMessageReturningFalseImpl(bool, char const*, char const*, int, char16_t const*, ...) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Private/Misc/AssertionMacros.cpp:488]
+libUE4Editor-UnrealEd.so!ObjectTools::ForceDeleteObjects(TArray&lt;UObject*, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;, bool)::$_71::operator()() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2829]
+libUE4Editor-UnrealEd.so!ObjectTools::ForceDeleteObjects(TArray&lt;UObject*, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;, bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2829]
+libUE4Editor-UnrealEd.so!FAssetDeleteModel::DoForceDelete() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/AssetDeleteModel.cpp:321]
+libUE4Editor-UnrealEd.so!SDeleteAssetsDialog::ForceDelete() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/Dialogs/SDeleteAssetsDialog.cpp:716]
+libUE4Editor-UnrealEd.so!TBaseSPMethodDelegateInstance&lt;false, SDeleteAssetsDialog, (ESPMode)0, FReply ()&gt;::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-Slate.so!SButton::ExecuteOnClick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:385]
+libUE4Editor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:304]
+libUE4Editor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4676]
+libUE4Editor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5198]
+libUE4Editor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, FVector2D) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5166]
+libUE4Editor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:358]
+libUE4Editor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:428]
+libUE4Editor-Slate.so!FSlateApplication::TickPlatform(float) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1378]
+libUE4Editor-Slate.so!FSlateApplication::AddModalWindow(TSharedRef&lt;SWindow, (ESPMode)0&gt;, TSharedPtr&lt;SWidget const, (ESPMode)0&gt;, bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1905]
+libUE4Editor-UnrealEd.so!UEditorEngine::EditorAddModalWindow(TSharedRef&lt;SWindow, (ESPMode)0&gt;) const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/EditorEngine.cpp:4095]
+libUE4Editor-UnrealEd.so!ObjectTools::DeleteObjects(TArray&lt;UObject*, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;, bool, ObjectTools::EAllowCancelDuringDelete) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/UnrealEd/Private/ObjectTools.cpp:2202]
+libUE4Editor-ContentBrowser.so!ContentBrowserUtils::DeleteFolders(TArray&lt;FString, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:602]
+libUE4Editor-ContentBrowser.so!FPathContextMenu::ExecuteDeleteFolderConfirmed() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/PathContextMenu.cpp:791]
+libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance&lt;false, FPathContextMenu, (ESPMode)0, FReply ()&gt;::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-ContentBrowser.so!SContentBrowserConfirmPopup::YesClicked() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Editor/ContentBrowser/Private/ContentBrowserUtils.cpp:258]
+libUE4Editor-ContentBrowser.so!TBaseSPMethodDelegateInstance&lt;false, SContentBrowserConfirmPopup, (ESPMode)0, FReply ()&gt;::Execute() const [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUE4Editor-Slate.so!SButton::ExecuteOnClick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:385]
+libUE4Editor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp:304]
+libUE4Editor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&amp;, FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4676]
+libUE4Editor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&amp;) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5198]
+libUE4Editor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, FVector2D) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5166]
+libUE4Editor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:358]
+libUE4Editor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:428]
+UE4Editor!FEngineLoop::Tick() [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:4762]
+UE4Editor!GuardedMain(char16_t const*) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Launch/Private/Launch.cpp:171]
+libUE4Editor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/hdd-data/Software/LinuxInstalled/UnrealEngine-release/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:264]
+libc.so.6!__libc_start_main(+0xf2)
+UE4Editor!_start()
+</CallStack>
+		<PCallStack>libUE4Editor-Core 0x000000009c58b000 + a1db72 libUE4Editor-Core 0x000000009c58b000 + 572bfe libUE4Editor-Core 0x000000009c58b000 + a184d3 libUE4Editor-Core 0x000000009c58b000 + a345be libUE4Editor-Core 0x000000009c58b000 + 7315a9 libUE4Editor-Core 0x000000009c58b000 + 731f4f libUE4Editor-UnrealEd 0x0000000093c3a000 + 2990020 libUE4Editor-UnrealEd 0x0000000093c3a000 + 1a1c43c libUE4Editor-UnrealEd 0x0000000093c3a000 + f54864 libUE4Editor-UnrealEd 0x0000000093c3a000 + 128671f libUE4Editor-UnrealEd 0x0000000093c3a000 + 1352814 libUE4Editor-Slate 0x0000000096dad000 + 3fe93c libUE4Editor-Slate 0x0000000096dad000 + 412f7f libUE4Editor-Slate 0x0000000096dad000 + 25f86d libUE4Editor-Slate 0x0000000096dad000 + 22588b libUE4Editor-Slate 0x0000000096dad000 + 2675b0 libUE4Editor-ApplicationCore 0x000000009739b000 + e5528 libUE4Editor-ApplicationCore 0x000000009739b000 + e4d31 libUE4Editor-Slate 0x0000000096dad000 + 23a66f libUE4Editor-Slate 0x0000000096dad000 + 23e083 libUE4Editor-UnrealEd 0x0000000093c3a000 + 13c162c libUE4Editor-UnrealEd 0x0000000093c3a000 + 1a0ad98 libUE4Editor-ContentBrowser 0x0000000085ef9000 + 1f0461 libUE4Editor-ContentBrowser 0x0000000085ef9000 + 319593 libUE4Editor-ContentBrowser 0x0000000085ef9000 + 3f7b24 libUE4Editor-ContentBrowser 0x0000000085ef9000 + 2e3b94 libUE4Editor-ContentBrowser 0x0000000085ef9000 + 2e4ca4 libUE4Editor-Slate 0x0000000096dad000 + 3fe93c libUE4Editor-Slate 0x0000000096dad000 + 412f7f libUE4Editor-Slate 0x0000000096dad000 + 25f86d libUE4Editor-Slate 0x0000000096dad000 + 22588b libUE4Editor-Slate 0x0000000096dad000 + 2675b0 libUE4Editor-ApplicationCore 0x000000009739b000 + e5528 libUE4Editor-ApplicationCore 0x000000009739b000 + e4d31 UE4Editor 0x0000000000200000 + 318e5 UE4Editor 0x0000000000200000 + 3e563 libUE4Editor-UnixCommonStartup 0x0000000093a62000 + 3b5b libc.so 0x0000000093863000 + 270b3 UE4Editor 0x0000000000200000 + 2c029</PCallStack>
+		<PCallStackHash>48D4A3F5768D9CE9A58F493ED5207C97E8AF3593</PCallStackHash>
+		<TimeOfCrash>637421870929950000</TimeOfCrash>
+		<bAllowToBeContacted>1</bAllowToBeContacted>
+		<PlatformFullName>Linux [GenericOSVersionLabel GenericOSSubVersionLabel 64b]</PlatformFullName>
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+		<Modules />
+	</RuntimeProperties>
+	<PlatformProperties>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+	</PlatformProperties>
+	<EngineData>
+		<RHI.RHIName>OpenGL</RHI.RHIName>
+		<RHI.AdapterName>GeForce 930MX/PCIe/SSE2</RHI.AdapterName>
+		<RHI.InternalDriverVersion>4.3.0 NVIDIA 455.38</RHI.InternalDriverVersion>
+		<RHI.FeatureLevel>SM5</RHI.FeatureLevel>
+	</EngineData>
+	<GameData />
+	<EnabledPlugins>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Netcode Unit Test&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Netcode Unit Test - Unreal Engine 4&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;GeometryMode&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Asset Manager Editor&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;GameplayTagsEditor&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;CryptoKeys&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Facial Animation Bulk Importer&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Editor Scripting Utilities&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Data Validation&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Mac Graphics Switching&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Wizard for mobile packaging scenarios&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Plugin Browser&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;SpeedTree Importer&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Material Analyzer&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Curve Editor Tools&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Linux Compiler-only Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;KDevelop Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Visual Studio Code Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 2, &quot;VersionName&quot;: &quot;2.0&quot;, &quot;FriendlyName&quot;: &quot;CLion Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Actor Layer Utilities&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 14, &quot;VersionName&quot;: &quot;1.4&quot;, &quot;FriendlyName&quot;: &quot;Git&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;XCode Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Subversion&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Perforce&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 40, &quot;VersionName&quot;: &quot;1.4.6&quot;, &quot;FriendlyName&quot;: &quot;Plastic SCM&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;CodeLite Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Visual Studio Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 2, &quot;VersionName&quot;: &quot;1.1&quot;, &quot;FriendlyName&quot;: &quot;Rider Integration&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Animation Sharing&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;UObject Example Plugin&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Actor Sequence (Experimental)&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Matinee to Level Sequence&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Level Sequence Editor&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Template Sequence (Experimental)&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Movie Render Pipeline&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Camera Shake Previewer&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Online Subsystem GooglePlay&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Online Subsystem iOS&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Online Subsystem&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Online Subsystem Utils&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Online Subsystem NULL&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;AISupport&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;UDP Messaging&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;TCP Messaging&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Proxy LOD Plugin (Experimental)&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;CharacterAI&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Chaos Cloth&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Platform Cryptography Plugin&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Chaos Solver&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Alembic Importer (Experimental)&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Chaos Niagara&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Geometry Cache (Experimental)&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Geometry Processing&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Automation Utilities&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Chaos Cloth Editor&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Planar Cut&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1&quot;, &quot;FriendlyName&quot;: &quot;BackChannel&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;ChaosEditor&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Skeletal Mesh Simplifier (Early Access)&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Geometry&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;LightPropagationVolume&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Launcher Chunk Installer&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;ScreenshotTools&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Mesh Painting&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Niagara&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Paper2D&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;MLSDK&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Magic Leap Passable World&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Magic Leap Light Estimatation&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Magic Leap&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Magic Leap Media Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Datasmith Content&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Variant Manager Content&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Mobile Patching Utilities&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;ArchVis Character&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Mobile Location Services Blueprints Library&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Cable Component&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Google Cloud Messaging&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;SoundFields&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Windows Movie Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Android Movie Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;0.1&quot;, &quot;FriendlyName&quot;: &quot;Android Runtime Permission&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Linux Device Profile Selector&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;GooglePAD&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Movie Player for WebM files&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Apple Movie Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Custom Mesh Component&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Asset Tags&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Android Device Profile Selector&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Editable Mesh&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.44.0&quot;, &quot;FriendlyName&quot;: &quot;Oculus VR&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Custom Splash Preload Screen&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;SteamVR&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Audio Capture&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.1&quot;, &quot;FriendlyName&quot;: &quot;Synthesis and DSP Effects&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Apple Image Utils&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Example Device Profile Selector&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Significance Manager&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;PhysX Vehicles&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;IOS Device Profile Selector&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Procedural Mesh Component&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Runtime PhysX Cooking&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Media Player Editor&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 2, &quot;VersionName&quot;: &quot;2.0&quot;, &quot;FriendlyName&quot;: &quot;WMF Media Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Media Compositing&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;WebM Video Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 1, &quot;VersionName&quot;: &quot;1.0&quot;, &quot;FriendlyName&quot;: &quot;Image Sequence Media Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 2, &quot;VersionName&quot;: &quot;2.0&quot;, &quot;FriendlyName&quot;: &quot;Android Media Player&quot; }</Plugin>
+		<Plugin>{ &quot;Version&quot;: 2, &quot;VersionName&quot;: &quot;2.0&quot;, &quot;FriendlyName&quot;: &quot;AVF Media Player&quot; }</Plugin>
+	</EnabledPlugins>
+</FGenericCrashContext>
