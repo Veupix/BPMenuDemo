@@ -1,7 +1,7 @@
 # BPMenuDemo
 Menu example for Unreal Engine 4 (Blueprints).
 
-Tested on UE 4.25.3.
+Tested on UE 4.25
 
 ## Strcucture:
 * UI logic ([UMG_Menu*](https://github.com/Veupix/BPMenuDemo/tree/main/Content/Menu)) is separated from Game logic ([CtrlActor_Menu*](https://github.com/Veupix/BPMenuDemo/tree/main/Content/Menu))
