@@ -4,9 +4,9 @@ Menu example for Unreal Engine 4 (Blueprints).
 Tested on UE 4.25.3.
 
 ## Strcucture:
-* UI logic (UMG_Menu*) is separated from Game logic (CtrlActor_Menu*)
-* customizable Menu (inherited from UMG_Menu_Base and CtrlActor_Menu_Base)
-* customizable Menu Items (inherited from UMG_MenuItem_Base)
+* UI logic ([UMG_Menu*](https://github.com/Veupix/BPMenuDemo/tree/main/Content/Menu)) is separated from Game logic ([CtrlActor_Menu*](https://github.com/Veupix/BPMenuDemo/tree/main/Content/Menu))
+* customizable Menu (inherited from [UMG_Menu_Base](https://github.com/Veupix/BPMenuDemo/tree/main/Content/Menu) and [CtrlActor_Menu_Base](https://github.com/Veupix/BPMenuDemo/tree/main/Content/Menu))
+* customizable Menu Items (inherited from [UMG_MenuItem_Base](https://github.com/Veupix/BPMenuDemo/tree/main/Content/Menu))
 
 ## Navigation:
 * by keyboard
